@@ -4,7 +4,7 @@ import { FAQPage } from "../components";
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
   description:
-    "High-intent EuroHome Design questions about process, services, investment, delivery, furniture, materials and care.",
+    "Quick answers about EuroHome Furniture services, timing, investment, delivery and materials.",
 };
 
 export default function Page() {

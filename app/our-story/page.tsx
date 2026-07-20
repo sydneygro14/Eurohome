@@ -5,7 +5,7 @@ import { templatePages } from "../site-content";
 export const metadata: Metadata = {
   title: "Our Story",
   description:
-    "EuroHome Design story structure for relationship-first design, local guidance and trusted expertise.",
+    "The EuroHome Furniture story: warm modern design, practical guidance and European collections.",
 };
 
 export default function Page() {

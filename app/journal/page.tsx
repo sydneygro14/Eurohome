@@ -4,7 +4,7 @@ import { JournalPage } from "../components";
 export const metadata: Metadata = {
   title: "Design Journal",
   description:
-    "EuroHome Design journal structure for intentional design, planning, visualization and better everyday living.",
+    "Short EuroHome Furniture ideas for planning rooms, choosing furniture and living better at home.",
 };
 
 export default function Page() {

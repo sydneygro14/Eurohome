@@ -5,7 +5,7 @@ import { templatePages } from "../site-content";
 export const metadata: Metadata = {
   title: "Design Services",
   description:
-    "EuroHome Design service structure for whole-home design, renovation, new construction, furniture planning and 3D visualization.",
+    "Furniture, room planning, renovation support and 3D visualization from EuroHome Furniture.",
 };
 
 export default function Page() {

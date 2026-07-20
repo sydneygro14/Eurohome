@@ -65,10 +65,7 @@ function VisualPanel({
         loading={eager ? "eager" : "lazy"}
         fetchPriority={eager ? "high" : "auto"}
       />
-      <figcaption>
-        <span>{site.imageStatus}</span>
-        {label}
-      </figcaption>
+      <figcaption className="srOnly">{label}</figcaption>
     </figure>
   );
 }
@@ -76,9 +73,14 @@ function VisualPanel({
 function Header() {
   return (
     <header className="siteHeader">
-      <Link className="brand" href="/" aria-label="EuroHome Design home">
-        <span className="brandName">EuroHome</span>
-        <span className="brandSub">Design</span>
+      <Link className="brand" href="/" aria-label="EuroHome Furniture home">
+        <img
+          className="brandLogo"
+          src={site.logo}
+          alt="EuroHome furniture"
+          width={310}
+          height={112}
+        />
       </Link>
       <nav className="desktopNav" aria-label="Primary navigation">
         {site.nav.map((item) => (
@@ -123,8 +125,7 @@ function Footer() {
         )}
       </nav>
       <p className="footerFine">
-        © 2026 EuroHome Design. Privacy · Accessibility · Better Home
-        Experiences™.
+        © 2026 EuroHome Furniture. Privacy · Accessibility.
       </p>
     </footer>
   );
@@ -168,7 +169,6 @@ function HomeHero() {
           <ButtonLink cta={hero.primaryCta} />
           <ButtonLink cta={hero.secondaryCta} variant="secondary" />
         </div>
-        <p className="assetBadge">{site.imageStatus}</p>
       </div>
     </section>
   );
@@ -308,7 +308,7 @@ function FinalInvitation() {
           <ButtonLink cta={{ label: "Explore Our Work", href: "/projects" }} variant="secondary" />
         </div>
         <p className="signature">
-          EuroHome Design
+          EuroHome Furniture
           <span>{site.tagline}</span>
         </p>
       </div>
@@ -400,8 +400,7 @@ export function ProjectsPage() {
             <p className="eyebrow">PROJECT STORIES</p>
             <h2 id="sample-projects">Approved Sample Project Cards</h2>
             <p>
-              Editorial sample projects remain labeled until verified client
-              work and approved imagery are supplied.
+              Sample projects until real client photos are added.
             </p>
           </div>
           <div className="cardGrid">
@@ -457,11 +456,10 @@ export function BeginProjectPage() {
           <p className="eyebrow">BEGIN YOUR PROJECT</p>
           <h1>Every Better Home Experience Begins With a Conversation</h1>
           <p className="heroDeck">
-            Share the first shape of your project through a calm and useful
-            intake experience.
+            Tell us what you want your home to make possible.
           </p>
         </div>
-        <VisualPanel label="Begin Your Project" eager />
+        <VisualPanel label="Start a Project" eager />
       </section>
       <section className="contentSection">
         <div className="sectionInner formLayout">
@@ -469,8 +467,7 @@ export function BeginProjectPage() {
             <p className="eyebrow">WHAT HAPPENS NEXT</p>
             <h2>A Thoughtful First Step</h2>
             <p>
-              Share the project type, rooms, timing, location, estimated
-              investment range and the experience you want your home to create.
+              Share the basics. We’ll use them to start a helpful conversation.
             </p>
           </div>
           <InquiryForm />

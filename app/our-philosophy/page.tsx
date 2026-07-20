@@ -4,7 +4,7 @@ import { PhilosophyPage } from "../components";
 export const metadata: Metadata = {
   title: "Our Philosophy",
   description:
-    "The approved EuroHome Design philosophy for intentional design, optimized spaces and Better Home Experiences™.",
+    "The EuroHome Furniture philosophy for warm modern rooms and Better Home Experiences™.",
 };
 
 export default function Page() {

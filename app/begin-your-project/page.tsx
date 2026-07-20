@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { BeginProjectPage } from "../components";
 
 export const metadata: Metadata = {
-  title: "Begin Your Project",
-  description:
-    "A calm project inquiry experience for qualified EuroHome Design conversations.",
+  title: "Start a Project",
+  description: "Start a EuroHome Furniture project conversation.",
 };
 
 export default function Page() {

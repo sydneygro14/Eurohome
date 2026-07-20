@@ -5,7 +5,7 @@ import { templatePages } from "../site-content";
 export const metadata: Metadata = {
   title: "Our Process",
   description:
-    "The EuroHome Design Experience™ from listening and discovery through planning, visualization, implementation and support.",
+    "How EuroHome Furniture moves from first conversation to furniture, planning, visualization and installation support.",
 };
 
 export default function Page() {

@@ -4,7 +4,7 @@ import { ProjectsPage } from "../components";
 export const metadata: Metadata = {
   title: "Featured Projects",
   description:
-    "Project storytelling templates for EuroHome Design, showing client-centered decisions and Better Home Experiences™ outcomes.",
+    "EuroHome Furniture project stories for rooms planned around comfort, beauty and daily life.",
 };
 
 export default function Page() {
